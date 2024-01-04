@@ -127,7 +127,7 @@ nav {
 }
 .desc-hero p{
     line-height: 22px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     color: black;
     text-align: justify;
     font-family: 'Mulish';
@@ -236,8 +236,7 @@ nav {
     gap: 20px;
 }
 .project:nth-child(odd){
-    flex-direction: row;
-
+    flex-direction:row
 }
 .project:nth-child(even){
     flex-direction: row-reverse;
@@ -247,6 +246,13 @@ nav {
     line-height: 50px;
 }
 .desc-project p{
+    margin: 100px auto;
+}
+.desc-project-2 h1{
+    text-decoration: underline #3b54df;
+    line-height: 50px;
+}
+.desc-project-2 p{
     margin: 15px auto;
 }
 .read-more{
@@ -279,6 +285,31 @@ nav {
     position: relative;
 }
 .img-project img:nth-child(2)hover{
+    transform: scale(1,1);
+}
+.img-project-2 img{
+    width: 240px;
+    height: 320px;
+    border-radius: 15px;
+    object-fit:cover;
+    box-shadow: 0px 0px 15px -3px rgba(29,29,29,0.5);
+    transition: transform 0.3 ease;
+}
+.img-project-2 img:hover{
+    transform: scale(1.1);
+    z-index: 2;
+    position: relative;
+}
+.img-project-2 img:nth-child(2){
+    margin:-100px;
+    width: 240px;
+    height: 320px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0px 0px 15px -3px rgba(29,29,29,0.5),0px 10px 15px -3px rgba(29,29,29,0.5);
+    position: relative;
+}
+.img-project-2 img:nth-child(2)hover{
     transform: scale(1,1);
 }
 .footer{
