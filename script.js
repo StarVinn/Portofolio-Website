@@ -12,6 +12,13 @@ data2 =[{
     'subtitle':'Wallpaper Handphone',
     'desc': ""
 }]
+data3 =[{
+    'img1':'asset/Desain tanpa judul 11 .png',
+    'img2':'asset/Desain tanpa judul 3 .png',
+    'title':'Kolase Oshi',
+    'subtitle':'Wallpaper Desktop',
+    'desc': ""
+}]
     
 
 
@@ -36,6 +43,21 @@ data2.forEach(element => {
     container.innerHTML +=
     `<div class="project">
             <div class="img-project-2">
+                        <img src="`+element.img1+`" alt="">
+                        <img src="${element.img2}" alt="">
+                    </div>
+                    <div class="desc-project-2">
+                        <h1>${element.title}</h1>
+                        <h2>${element.subtitle}</h2>
+                        <p>${element.desc}</p>
+                    </div>
+                    <button class="read-more">Read More</button>
+                </div>`            
+});
+data3.forEach(element => {
+    container.innerHTML +=
+    `<div class="project">
+            <div class="img-project-3">
                         <img src="`+element.img1+`" alt="">
                         <img src="${element.img2}" alt="">
                     </div>
